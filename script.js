@@ -35,4 +35,3 @@ Variables
         -stop when game is not active
 */
 
-console.log('connected');

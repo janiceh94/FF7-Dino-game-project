@@ -1,4 +1,4 @@
-# FF7-Dino-game-project
+# FF7-Run
 
 ## User Story
 -As a user, I want a replay option so that the game can be replayed. <br>
