@@ -57,6 +57,8 @@ document.body.onkeydown = function(e){
 
 //Game Over
 let isAlive = setInterval (function(){
+    //show score
+    score.innerText++;
     //cloud position in game box
     let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     //tonberry position in game box
