@@ -1,11 +1,11 @@
 # FF7-Dino-game-project
 
 ## User Story
--As a user, I want a replay option so that the game can be replayed. 
--As a user, I want to see my score so that I can compare it with others or myself.
--As a user, I want an instructions open so that I know how to play the game.
--As a user, I want to collect items, so there is more interaction with the game.
--As a user, I want the score to always be visible in game so that a higher score can be attempted
+-As a user, I want a replay option so that the game can be replayed. <br>
+-As a user, I want to see my score so that I can compare it with others or myself. <br>
+-As a user, I want an instructions open so that I know how to play the game. <br>
+-As a user, I want to collect items, so there is more interaction with the game. <br>
+-As a user, I want the score to always be visible in game so that a higher score can be attempted 
 
 ## Instructions
 -Try to collect gil while avoiding enemies that rush towards you by using Spacebar to jump. Game over is when an enemy touches you.
