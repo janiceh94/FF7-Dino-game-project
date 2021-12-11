@@ -36,3 +36,19 @@ Variables
 */
 
 //Game Play
+const cloud = document.getElementById('cloud');
+
+//cloud jumping
+function jump(){
+    cloud.classList.add('jump-animation');
+    setTimeout(function() {
+        cloud.classList.remove('jump-animation');
+    }, 500);
+};
+
+//press space bar to jump
+document.body.onkeydown = function(e){
+    if(e.keyCode == 32){
+        jump();
+    }
+}; 

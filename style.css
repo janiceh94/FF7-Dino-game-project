@@ -11,6 +11,7 @@
     background-size: cover;
 }
 
+/* characters */
 #cloud{
     height: 125px;
     width: 90px;
@@ -28,4 +29,25 @@
     position: relative;
     background-size: cover;
     left: 915px;
+}
+
+/* animations */
+.jump-animation{
+    animation: jump 0.5s;
+}
+
+/* keyframes */
+@keyframes jump {
+    0%{
+        top: 375px;
+    }
+    50%{
+        top: 187px;
+    }
+    75%{
+        top: 187px;
+    }
+    100%{
+        top: 357px;
+    }
 }
