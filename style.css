@@ -29,6 +29,7 @@
     position: relative;
     background-size: cover;
     left: 915px;
+    animation: tonberry 1s infinite linear;
 }
 
 /* animations */
@@ -49,5 +50,14 @@
     }
     100%{
         top: 357px;
+    }
+}
+
+@keyframes tonberry{
+    0%{
+        left: 915px;
+    }
+    100%{
+        left: -20px;
     }
 }

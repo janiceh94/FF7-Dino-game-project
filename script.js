@@ -36,7 +36,9 @@ Variables
 */
 
 //Game Play
+//characters
 const cloud = document.getElementById('cloud');
+const tonberry = document.getElementById('tonberry');
 
 //cloud jumping
 function jump(){
@@ -52,3 +54,16 @@ document.body.onkeydown = function(e){
         jump();
     }
 }; 
+
+//Game Over
+let isAlive = setInterval (function(){
+    //cloud position in game box
+    let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
+    //tonberry position in game box
+    let tonberryLeft = parseInt(window.getComputedStyle(tonberry).getPropertyValue('left'));
+    //collision
+    if(tonberryLeft < 50 && tonberryLeft > 0 && cloudTop > 300){
+        alert('game over');
+    }
+    
+}, 10);
