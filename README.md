@@ -1,7 +1,7 @@
 # FF7-Dino-game-project
 
 ##User Story
--As a user I want to create a game combines two different games and allows for replayability. 
+-As a user I want to create a game that combines two different games and allows for replayability. 
 
 ![title screen](20211211_075650.jpg)
 ![instructions](20211211_075656.jpg)
