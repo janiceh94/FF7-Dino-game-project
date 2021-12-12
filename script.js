@@ -39,6 +39,7 @@ Variables
 //characters
 const cloud = document.getElementById('cloud');
 const tonberry = document.getElementById('tonberry');
+const cactuar = document.getElementById('cactuar');
 
 //cloud jumping
 function jump(){
@@ -58,14 +59,22 @@ document.body.onkeydown = function(e){
 //Game Over
 let isAlive = setInterval (function(){
     //show score
-    score.innerText++;
+    /* score.innerText++; */
     //cloud position in game box
-    let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
+let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     //tonberry position in game box
     let tonberryLeft = parseInt(window.getComputedStyle(tonberry).getPropertyValue('left'));
+
+    let cactuarLeft = parseInt(window.getComputedStyle(cactuar).getPropertyValue('left'));
+
     //collision
-    if(tonberryLeft < 50 && tonberryLeft > 0 && cloudTop > 300){
+    if((tonberryLeft < 50) && (tonberryLeft) > 0 && cloudTop > 300) 
+    {
         alert('game over');
     }
-    
+    if((cactuarLeft < 50) && (cactuarLeft) > 0 && cloudTop > 300)
+    {
+        alert('game over');
+    }
+    isAlive = false;
 }, 10);
