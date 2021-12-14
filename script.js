@@ -80,13 +80,20 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     isAlive = true;
     if((tonberryLeft < 50) && (tonberryLeft) > 0 && cloudTop > 300) 
     {
-        alert('game over');
+        /* alert('game over'); */
+        document.getElementById('tonberry').style.animationPlayState = 'paused';
+        setTimeout(function(){
+        document.location.replace('html/gameOver.html')}, 600);
     }
     isAlive = false;
+    
     if((cactuarLeft < 50) && (cactuarLeft) > 0 && cloudTop > 300)
     {
-        alert('game over');
+        /* alert('game over'); */
+        document.getElementById('cactuar').style.animationPlayState = 'paused';
+        setTimeout(function(){
+        document.location.replace('html/gameOver.html')}, 600);
     }
-    isAlive = false;
+    isAlive = false  
 }, 10);
 

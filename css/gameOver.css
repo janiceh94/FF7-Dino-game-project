@@ -9,6 +9,8 @@
     background-size: cover;
     background-position: center;
     font-family: 'Press Start 2P', cursive;
+    
+    animation: gameOver 5000ms;
 }
 
 #return{
@@ -25,6 +27,15 @@
         opacity: 1;
     }
     50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes gameOver {
+    0%{
         opacity: 0;
     }
     100%{

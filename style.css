@@ -36,6 +36,7 @@
     background-size: cover;
     left: 990px;
     animation: tonberry 2.3s infinite linear;
+    animation-play-state: running;
     animation-delay: 1s;
 }
 
@@ -48,6 +49,7 @@
     background-size: cover;
     left: 990px; 
     animation: cactuar 1.7s infinite linear;
+    animation-play-state: running;
     animation-delay: 1s;
 }
 
