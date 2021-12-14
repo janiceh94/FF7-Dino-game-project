@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&family=Press+Start+2P&display=swap');
+
+.titleScreen{
+    width: 1080px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url('https://preview.redd.it/z0azmgpse7551.png?auto=webp&s=3714f8ec688d0f1e3d90f51a1c6e8c3a769e6090');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#newGame{
+    text-align: center;
+    display: block;
+    margin: 20% 0px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+#instructions{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
