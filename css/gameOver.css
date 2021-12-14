@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&family=Press+Start+2P&display=swap');
+
+.gameOver{
+    width: 1080px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url('https://i.ytimg.com/vi/Hs7dYjkagxk/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#return{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 30% 0px 0px;
+    animation: return 3s infinite linear;
+}
+
+@keyframes return {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
