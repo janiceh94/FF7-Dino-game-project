@@ -1,11 +1,15 @@
 #score{
-    position: absolute;
-    right: 15vmin;
+    /* position:fixed;
+    right: 30vmin;
     top: 5vmin;
-    font-size: large;
+    font-size: large; */
+    position: relative;
+    left: 1000px;
+    top: -300px;
 }
 
 .game{
+    width: 1080px;
     height: 500px;
     border: 2px solid black;
     margin: auto;
@@ -30,8 +34,8 @@
     background-image: url('https://i.imgur.com/vdgX8Jl.png');
     position: relative;
     background-size: cover;
-    left: 1080px;
-    animation: tonberry 2s infinite linear; 
+    left: 990px;
+    animation: tonberry 2.3s infinite linear;
 }
 
 #cactuar{
@@ -41,13 +45,24 @@
     background-image: url('https://i.imgur.com/n8PcHmO.png');
     position: relative;
     background-size: cover;
-    left: 1080px; 
-    animation: cactuar 1.5s infinite linear;
+    left: 990px; 
+    animation: cactuar 1.7s infinite linear;
+}
+
+#gil{
+    height: 50px;
+    width: 50px;
+    top: -90px;
+    background-image: url('https://i.imgur.com/VjkSory.png');
+    position: relative;
+    background-size: cover;
+    left: 1030px;
+    animation: gil 3s infinite linear;
 }
 
 /* animations */
 .jump-animation{
-    animation: jump 0.5s;
+    animation: jump 0.5s; 
 }
 
 /* keyframes */
@@ -57,12 +72,12 @@
     }
     50%{
         top: 187px;
-    }
+    } 
     75%{
         top: 187px;
     }
     100%{
-        top: 357px;
+        top: 375px;
     }
 }
 
@@ -84,3 +99,11 @@
     }
 }
 
+@keyframes gil{
+    0%{
+        left: 1080px;
+    }
+    100%{
+        left: -10px;
+    }
+}

@@ -40,7 +40,9 @@ Variables
 const cloud = document.getElementById('cloud');
 const tonberry = document.getElementById('tonberry');
 const cactuar = document.getElementById('cactuar');
+const gil = document.getElementById('gil');
 
+let score = 0;
 //cloud jumping
 function jump(){
     cloud.classList.add('jump-animation');
@@ -67,14 +69,24 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
 
     let cactuarLeft = parseInt(window.getComputedStyle(cactuar).getPropertyValue('left'));
 
+    let gilLeft = parseInt(window.getComputedStyle(gil).getPropertyValue('left'));
     //collision
+    if((gilLeft < 50) && (gilLeft) > 15 && cloudTop <= 300)
+    {
+        score += 1;
+        document.getElementById('score').innerHTML = score ;
+        end
+    }
+    isAlive = true;
     if((tonberryLeft < 50) && (tonberryLeft) > 0 && cloudTop > 300) 
     {
         alert('game over');
     }
+    isAlive = false;
     if((cactuarLeft < 50) && (cactuarLeft) > 0 && cloudTop > 300)
     {
         alert('game over');
     }
     isAlive = false;
 }, 10);
+
