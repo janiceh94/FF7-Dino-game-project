@@ -43,7 +43,8 @@ const cactuar = document.getElementById('cactuar');
 const gil = document.getElementById('gil');
 
 let score = 0;
-let highScore = document.getElementById('highScore');
+const highScore = document.getElementById('highScore');
+
 
 //cloud jumping
 function jump(){
@@ -76,11 +77,11 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     if((gilLeft < 50) && (gilLeft) > 15 && cloudTop <= 300)
     {
         score += 1;
-        document.getElementById('score').innerHTML = score;
-        if(score > highScore){
-            document.getElementById('highScore').innerHTML = score;
+        document.getElementById('score').innerHTML = score; 
+        if(score > highScore.innerHTML){
+            localStorage.setItem('score',document.getElementById('score').innerHTML);
         } 
-        localStorage.setItem('highScore', score);
+        document.getElementById('currentScore').innerHTML = localStorage.getItem('score');
     }
     isAlive = true;
     if((tonberryLeft < 50) && (tonberryLeft) > 0 && cloudTop > 300) 
@@ -101,5 +102,7 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     }
     isAlive = false  
 }, 10);
+//saving current score
+document.getElementById('currentScore').innerHTML=localStorage.getItem('score');
 
-document.getElementById('highScore').innerHTML = localStorage.getItem('highScore');
+
