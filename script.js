@@ -43,6 +43,8 @@ const cactuar = document.getElementById('cactuar');
 const gil = document.getElementById('gil');
 
 let score = 0;
+let highScore = document.getElementById('highScore');
+
 //cloud jumping
 function jump(){
     cloud.classList.add('jump-animation');
@@ -74,8 +76,11 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     if((gilLeft < 50) && (gilLeft) > 15 && cloudTop <= 300)
     {
         score += 1;
-        document.getElementById('score').innerHTML = score ;
-        end
+        document.getElementById('score').innerHTML = score;
+        if(score > highScore){
+            document.getElementById('highScore').innerHTML = score;
+        } 
+        localStorage.setItem('highScore', score);
     }
     isAlive = true;
     if((tonberryLeft < 50) && (tonberryLeft) > 0 && cloudTop > 300) 
@@ -97,3 +102,4 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     isAlive = false  
 }, 10);
 
+document.getElementById('highScore').innerHTML = localStorage.getItem('highScore');
