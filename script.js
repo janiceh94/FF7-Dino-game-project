@@ -81,13 +81,17 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
         if(score > highScore.innerHTML){
             localStorage.setItem('score',document.getElementById('score').innerHTML);
         } 
-        document.getElementById('currentScore').innerHTML = localStorage.getItem('score');
+        document.getElementById('currentScore').innerHTML = localStorage.getItem('score');  
     }
     isAlive = true;
     if((tonberryLeft < 50) && (tonberryLeft) > 0 && cloudTop > 300) 
     {
         /* alert('game over'); */
+        //stop enemy moving
         document.getElementById('tonberry').style.animationPlayState = 'paused';
+        //prevent player from jumping
+        cloud.classList.remove('jump-animation');
+        //load into game over screen
         setTimeout(function(){
         document.location.replace('html/gameOver.html')}, 500);
     }
@@ -97,10 +101,11 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     {
         /* alert('game over'); */
         document.getElementById('cactuar').style.animationPlayState = 'paused';
+        cloud.classList.remove('jump-animation');
         setTimeout(function(){
         document.location.replace('html/gameOver.html')}, 500);
     }
-    isAlive = false  
+    isAlive = false
 }, 10);
 //saving current score
 document.getElementById('currentScore').innerHTML=localStorage.getItem('score');
