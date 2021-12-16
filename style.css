@@ -41,9 +41,9 @@
     position: relative;
     background-size: cover;
     left: 990px;
-    /* animation: tonberry 2.3s infinite linear;
+    animation: tonberry 2.3s infinite linear;
     animation-play-state: running;
-    animation-delay: 1s; */
+    animation-delay: 1s;
 }
 
 #cactuar{

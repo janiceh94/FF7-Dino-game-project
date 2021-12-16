@@ -82,7 +82,6 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
         if(score > highScore.innerHTML){
             localStorage.setItem('score',document.getElementById('score').innerHTML);
         } 
-        /* document.getElementById('currentScore').innerHTML = localStorage.getItem('score');   */
     }
     isAlive = true;
     if((tonberryLeft < 50) && (tonberryLeft) > 0 && cloudTop > 300) 
@@ -109,6 +108,5 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
     isAlive = false
 }, 10);
 //saving current score
-/* document.getElementById('currentScore').innerHTML=localStorage.getItem('score'); */
 
 document.getElementById('highScore').innerHTML=localStorage.getItem('score');
