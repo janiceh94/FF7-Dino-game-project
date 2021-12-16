@@ -110,3 +110,20 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
 //saving current score
 
 document.getElementById('highScore').innerHTML=localStorage.getItem('score');
+
+//cloud running
+let currentImage = 1;
+function run(){
+    setInterval(changeImage, 400);
+}
+
+function changeImage(){
+    if(currentImage == 1){
+        document.getElementById('cloud').style.backgroundImage = "url('https://i.imgur.com/oE5oz6z.png')";
+        currentImage = 2;
+    } else {
+        document.getElementById('cloud').style.backgroundImage = "url('https://i.imgur.com/XcyYtJf.png')";
+        currentImage = 1;
+    }
+}
+window.onload = run;
