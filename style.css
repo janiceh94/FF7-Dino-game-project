@@ -41,10 +41,10 @@
     position: relative;
     background-size: cover;
     left: 990px;
-/*     animation: tonberry 2.3s infinite linear;
+    animation: tonberry 2.3s infinite linear;
     animation-play-state: running;
     animation-delay: 1s;
-    */
+   
 } 
 
 #cactuar{
@@ -55,9 +55,9 @@
     position: relative;
     background-size: cover;
     left: 990px; 
- /*    animation: cactuar 1.7s infinite linear;
+    animation: cactuar 1.7s infinite linear;
     animation-play-state: running;
-    animation-delay: 1s; */
+    animation-delay: 1s;
 }
 
 #gil{
