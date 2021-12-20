@@ -12,19 +12,29 @@
     font-family: 'Press Start 2P', cursive;
 }
 
-.background{
+/* .background{
     border: 5px solid white;
     height: 250px;
     width: 500px;
     display: block;
     margin: auto;
     background-color: blue;
+} */
+/* ------------------------------------ */
+.background{
+    border: 5px solid white;
+    height: 300px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    background-color: blue;
 }
+/* ------------------------------------ */
 
 #highScore{
     text-align: center;
-    padding: 70px 0 20px 0;
-    margin: 8% 0px 0px;
+    padding: 60px 0 20px 0;
+    margin: 15px 0px 0px;
 }
 
 #currentScore{
@@ -32,6 +42,19 @@
     text-align: center;
     justify-content: center;
 }
+
+/* ------------------------------------ */
+#highScoreHard{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin: 20px 0px 0px;
+}
+#currentScoreHard{
+    position: center;
+    text-align: center;
+    justify-content: center;
+}
+/* ------------------------------------ */
 
 #exit{
     text-align: center;

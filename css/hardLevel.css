@@ -1,16 +1,16 @@
-#score{
+#scoreHard{
     position: relative;
     left: 1000px;
-    top: -300px;
+    top: -370px;
     font-size: 20px;
 }
-#highScore{
+#highScoreHard{
     display: none;
 }
 #scoreBoard{
     position: relative;
     left: 980px;
-    top: -370px;
+    top: -440px;
     font-size: 20px;
 }
 
@@ -19,43 +19,43 @@
     height: 500px;
     border: 2px solid black;
     margin: auto;
-    background-image: url('https://images.unsplash.com/uploads/1412026095116d2b0c90e/3bf33993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fG5hdHVyZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=400&q=60');
+    background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
     background-size: cover;
 }
 
 /* characters */
-#cloud{
+#zack{
     height: 125px;
     width: 90px;
     top: 375px;
-    background-image: url('https://i.imgur.com/oE5oz6z.png');
+    background-image: url('https://i.imgur.com/hOw0L61.png');
     position: relative;
     background-size: cover;
 }
 
-#tonberry{
-    height: 95px;
+#soldier{
+    height: 125px;
     width: 90px;
-    top: 285px;
-    background-image: url('https://i.imgur.com/vdgX8Jl.png');
+    top: 250px;
+    background-image: url('https://i.imgur.com/qROV3nh.png');
     position: relative;
     background-size: cover;
     left: 990px;
-    animation: tonberry 3s infinite linear;
+    animation: soldier 1.3s infinite linear;
     animation-play-state: running;
-    animation-delay: 1s;
+    animation-delay: 1.3s;
    
 } 
 
-#cactuar{
-    height: 85px;
+#soldier2{
+    height: 125px;
     width: 80px;
-    top: 203px;
-    background-image: url('https://i.imgur.com/n8PcHmO.png');
+    top: 135px;
+    background-image: url('https://i.imgur.com/qROV3nh.png');
     position: relative;
     background-size: cover;
     left: 990px; 
-    animation: cactuar 2s infinite linear;
+    animation: soldier 1s infinite linear;
     animation-play-state: running;
     animation-delay: 1s;
 }
@@ -63,12 +63,12 @@
 #gil{
     height: 50px;
     width: 50px;
-    top: -90px;
+    top: -140px;
     background-image: url('https://i.imgur.com/VjkSory.png');
     position: relative;
     background-size: cover;
     left: 1030px;
-    animation: gil 2.5s infinite linear;
+    animation: gil 1.8s infinite linear;
     animation-delay: 1s;
 }
 
@@ -93,7 +93,7 @@
     }
 }
 
-@keyframes tonberry{
+@keyframes soldier{
     0%{
         left: 1080px;
     }
@@ -102,7 +102,7 @@
     }
 }
 
-@keyframes cactuar{
+@keyframes soldier2{
     0%{
         left: 1080px;
     }

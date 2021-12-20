@@ -122,8 +122,9 @@ let cloudTop = parseInt(window.getComputedStyle(cloud).getPropertyValue('top'));
         setTimeout(function(){
         document.location.replace('html/gameOver.html')}, 500);
     }
-    isAlive = false
-}, 10);
+    isAlive = false;
+}
+, 10);
 
 //saving current score
 document.getElementById('highScore').innerHTML=localStorage.getItem('score');

@@ -12,14 +12,45 @@
     font-family: 'Press Start 2P', cursive;
 }
 
-#newGame{
+/* #newGame{
     text-align: center;
     display: block;
     margin: 20% 0px 0px;
     text-decoration: none;
     color: white;
+} */
+/* ---------------------------------- */
+#newGame{
+    text-align: center;
+    display:block;
+    margin: 15% 0px 50px 0px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
 }
-
+#tryAgain{
+    text-align: center;
+    display:block;
+    margin: 15% 0px 50px 0px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+#normal{
+    text-align: center;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+}
+#hard{
+    text-align: center;
+    display: block;
+    padding: 20px 0px 0px 0px;
+    text-decoration: none;
+    color: white;
+}
+/* --------------------------------- */
 #instructions{
     text-align: center;
     display: block;
@@ -33,4 +64,5 @@
     display: block;
     text-decoration: none;
     color: white;
+    padding-bottom: 20px;
 }
