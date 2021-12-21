@@ -26,7 +26,7 @@ document.body.onkeydown = function(e){
 
 let currentImage = 1;
 function run(){
-    setInterval(changeImage, 400);
+    setInterval(changeImage, 200);
 }
 
 function changeImage(){
@@ -79,7 +79,7 @@ let zackTop = parseInt(window.getComputedStyle(zack).getPropertyValue('top'));
     {
         /* alert('game over'); */
         document.getElementById('soldier2').style.animationPlayState = 'paused';
-        zacl=k.classList.remove('jump-animation');
+        zack.classList.remove('jump-animation');
         setTimeout(function(){
         document.location.replace('gameOver.html')}, 500);
     }

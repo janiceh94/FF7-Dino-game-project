@@ -65,7 +65,7 @@ document.body.onkeydown = function(e){
 //cloud running
 let currentImage = 1;
 function run(){
-    setInterval(changeImage, 400);
+    setInterval(changeImage, 250);
 }
 
 function changeImage(){
